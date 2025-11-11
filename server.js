@@ -27,6 +27,8 @@ const ip = (() => {
   return 'localhost';
 })();
 
+module.exports = app;
+
 const attrs = [{ name: 'commonName', value: ip }];
 const pems = selfsigned.generate(attrs, { days: 365 });
 const server = https.createServer(
