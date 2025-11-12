@@ -428,7 +428,7 @@ downloadbutton.addEventListener('click', () => {
     }
   });
 
-  pdf.save('download.pdf');
+  pdf.save(fileTitle.value + '.pdf');
 });
 
 document.getElementById('start').onclick = async () => {
